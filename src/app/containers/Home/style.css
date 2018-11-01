@@ -1,0 +1,18 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #112F41;
+  color: #F2B134;
+  flex-direction: column;
+}
+
+.container h2 {
+  font-size: 3em;
+}
+
+.container a img {
+  height: 40px;
+  width: 172px;
+}
