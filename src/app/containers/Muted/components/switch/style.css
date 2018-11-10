@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP');
+
+.unchecked {
+  padding-left: 3px;
+}
+
+.checked {
+  padding-left: 7px;
+}

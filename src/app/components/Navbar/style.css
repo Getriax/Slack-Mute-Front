@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  background: rgba(17,47,65, 0.9);
+}
+
+.tab {
+  padding: 1px 2px 1px 2px;
+  color: yellowgreen;
+  height: 90%;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-right: 1px solid white;
+}

@@ -10,7 +10,7 @@ export const authorize = async (
     url, method, params,
   };
 
-  const { data } = await axios(config);
+  const { data }: { data: Token } = await axios(config);
   console.log({ data });
-  return { ...data };
+  return data;
 };

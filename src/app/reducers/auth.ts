@@ -1,16 +1,14 @@
-import {
-  AUTHORIZATION_SUCCESS,
-  AUTHORIZATION_FAILURE,
-} from '../actions/types';
-
+import { AuthActions } from '../actions';
 import { Action } from 'app/models/action';
 
-export const authReducer = (state = {}, action: Action) => {
+export const authReducer = (state = {}, action: Action<object>) => {
   switch (action.type) {
-    case AUTHORIZATION_SUCCESS:
-      return { authorized: true, ...state };
-    case AUTHORIZATION_FAILURE:
-      return { authorized: false, ...state };
+    case AuthActions.Type.AUTHORIZATION_SUCCESS:
+      return true;
+    case AuthActions.Type.AUTHORIZATION_FAILURE:
+      return false;
+    case AuthActions.Type.LOG_OUT:
+      return false;
     default:
       return state;
   }

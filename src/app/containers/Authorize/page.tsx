@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as style from './style.css';
 import * as queryString from 'query-string';
 import { RouterState } from 'app/reducers';
+import { Loading } from '../../components';
 
 interface Props {
   authorized: boolean;
@@ -9,17 +10,9 @@ interface Props {
   authorizeUser: (code: string) => void;
 }
 
-interface State {
-  text: string;
-}
-
-export class AuthorizePage extends React.Component<Props, State> {
+export class AuthorizePage extends React.Component<Props, {}> {
   constructor(props: Props) {
     super(props);
-
-    this.state = {
-      text: 'Processing...',
-    };
   }
   public componentDidMount() {
     const { location } = this.props.router;
@@ -35,7 +28,7 @@ export class AuthorizePage extends React.Component<Props, State> {
   public render() {
     return (
       <section className={style.container}>
-        <h1>{this.state.text}</h1>
+        <Loading loading={true}/>
       </section>
     );
   }

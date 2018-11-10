@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as style from './style.css';
+import { AuthActions } from '../../actions';
 
 const url = 'https://slack.com/oauth/authorize';
 const clientId = process.env.CLIENT_ID;
@@ -9,6 +10,8 @@ const scopes = [
 ];
 
 export const home: React.StatelessComponent<{}> = () => {
+  AuthActions.checkIfLoogedIn();
+
   return (
     <section className={style.container}>
       <h2>Slack Muted</h2>

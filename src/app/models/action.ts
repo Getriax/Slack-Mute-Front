@@ -1,4 +1,4 @@
-export interface Action {
+export interface Action<T> {
   type: string;
-  paylaod?: object;
+  payload?: T;
 }

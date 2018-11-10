@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP');
+
+button {
+  background-color: red;
+  color: whitesmoke;
+  height: 5vh;
+  width: 90%;
+}
