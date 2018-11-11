@@ -10,12 +10,16 @@ interface Props {
 }
 
 export const hisotry: React.StatelessComponent<Props> = (props) => {
+  const hisotryTime = new Date(props.history.ts);
 
   return (
     <div
       className={style.history}
     >
-      <p className={style.hash}>#</p>
+      <div className={style.time}>
+        <p>{hisotryTime.toLocaleDateString()}</p>
+        <p>{hisotryTime.getHours()}:{hisotryTime.getMinutes()}:{hisotryTime.getSeconds()}</p>
+      </div>
       <div className={style.hisnames}>
       {props.history.muted.map((name, index) => (
         <p className={style.hisname} key={index}>{name}</p>

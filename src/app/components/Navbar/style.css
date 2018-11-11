@@ -1,21 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP');
+
 .container {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   width: 100vw;
   height: 5vh;
   background: rgba(17,47,65, 0.9);
+  font-family: 'Noto Sans JP';
 }
 
 .tab {
-  padding: 1px 2px 1px 2px;
+  padding: 1px 5px 1px 5px;
   color: yellowgreen;
   height: 90%;
-  width: 5vw;
+  min-width: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   font-size: 1.2em;
-  border-right: 1px solid white;
+  border-right: 0.1px solid rgba(45,30,95, 0.9);
+  background-color: rgba(45,30,95, 0.1);
+}
+
+.logo {
+  padding: 1px 5px 1px 5px;
+  margin-left: 10px;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.logout {
+  padding: 1px 5px 1px 5px;
+  color: yellowgreen;
+  background-color: rgba(30,47,65, 1);
+  height: 90%;
+  min-width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.selected {
+  font-weight: bold;
+  color: yellow;
 }

@@ -59,6 +59,7 @@
     "@types/auto-bind": "^1.2.0",
     "@types/react-router-dom": "^4.3.1",
     "auto-bind": "^1.2.1",
+    "aws-amplify": "^1.1.9",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "dotenv-webpack": "^1.5.7",

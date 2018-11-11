@@ -1,8 +1,9 @@
 .container {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: rgb(74, 58, 74);
   color: #F2B134;
+  flex-direction: column;
 }

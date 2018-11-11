@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import { authReducer } from './auth';
 import { routerReducer, RouterState } from 'react-router-redux';
 import { mutedReducer } from './muted';
 import { ChannelsState } from 'app/models/muted';
@@ -11,7 +10,6 @@ export interface RootState {
   loading: false;
   mutedHistory: HistoryState;
   muted: ChannelsState;
-  authorized: boolean;
   router: RouterState;
 }
 
@@ -28,6 +26,5 @@ export const rootReducer = combineReducers<RootState>({
   loading: loadingReducer as any,
   mutedHistory: historyReducer as any,
   muted: mutedReducer as any,
-  authorized: authReducer as any,
   router: routerReducer as any,
 });

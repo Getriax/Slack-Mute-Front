@@ -12,6 +12,7 @@ interface Props {
   router: RouterState;
   fetchMuted: () => Promise<void>;
   setMuted: (channelIds: string[]) => void;
+  logout: () => void;
 }
 
 export class MutedPage extends React.Component<Props, {}> {
@@ -43,7 +44,7 @@ export class MutedPage extends React.Component<Props, {}> {
     return (
       <section className={style.container}>
         <Loading loading={this.props.loading}/>
-        <Navbar></Navbar>
+        <Navbar logout={this.props.logout} selected="muted"></Navbar>
         <ChannelsList
           channels={this.props.muted.channels}
           onChange={this.handleMutedChange}

@@ -114,7 +114,7 @@ module.exports = {
       disable: !isProduction
     }),
     new HtmlWebpackPlugin({
-      template: 'assets/index.html'
+      template: '../index.html'
     })
   ],
   devServer: {

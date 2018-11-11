@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { RootState } from '../../reducers';
-import { HistoryActions } from '../../actions';
+import { HistoryActions, AuthActions } from '../../actions';
 import { HistoryPage } from './page';
 
 const mapStateToProps = (state: RootState) => ({
@@ -12,6 +12,7 @@ const mapStateToProps = (state: RootState) => ({
 const mapDispatchToProps = (dispatch: any) => ({
   fetchHistory: () => dispatch(HistoryActions.fetchHisotryAction()),
   deleteHistory: (index: number) => dispatch(HistoryActions.deleteHisotryAction(index)),
+  logout: () => dispatch(AuthActions.logoutUserAction()),
 });
 
 export const history = connect(

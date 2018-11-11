@@ -5,7 +5,6 @@ import { AuthorizePage } from './page';
 
 const mapStateToProps = (state: RootState) => ({
   loading: state.loading,
-  authorized: state.authorized,
   router: state.router,
 });
 
