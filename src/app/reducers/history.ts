@@ -5,8 +5,8 @@ import { HistoryDelete, History, HistoryState } from 'app/models/history';
 const createHistoryState = (): HistoryState => ({
   history: [
     {
-      muted: ['ABC', 'DEF'],
-      ts: 123,
+      muted: ['General', 'Test'],
+      ts: 1541960213949,
     },
   ],
   error: false,

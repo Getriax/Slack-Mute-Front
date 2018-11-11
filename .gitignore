@@ -3,3 +3,7 @@ node_modules/
 dist/
 
 .env
+.amplifyrc
+src/aws-exports.js
+
+amplify/

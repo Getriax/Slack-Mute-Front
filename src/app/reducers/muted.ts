@@ -27,7 +27,6 @@ export const mutedReducer = (state = createEmptyChannels() , action: Action<Mute
   switch (action.type) {
     case MutedActions.Type.GET_MUTED_SUCCESS:
       const { channels, muted } = action.payload as Muted;
-      console.log({ channels, muted });
       const channelIds = Object.keys(channels);
 
       return {
